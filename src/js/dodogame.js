@@ -7,15 +7,63 @@ let images = [
 ]
 
 window.addEventListener("load", function() {
-    var rand1 = Math.round(Math.random()*4);
-    var rand2 = Math.round(Math.random()*4);
-    var rand3 = Math.round(Math.random()*4);
+    var rand1 = Math.round(Math.random() * 4 + 1);
+    var rand2 = Math.round(Math.random() * 4 + 1);
+    var rand3 = Math.round(Math.random() * 4 + 1);
 
-    document.getElementsByClassName("icon")[0].src = images[rand1];
-    document.getElementsByClassName("icon2")[0].src = images[rand2];
-    document.getElementsByClassName("icon3")[0].src = images[rand3];
+    switch (rand1) {
+        case 1:
+            document.getElementsByClassName("icon")[0].src = "../public/img/sorteio/monster1.jpg";
+            break;
+        case 2:
+            document.getElementsByClassName("icon")[0].src = "../public/img/sorteio/monster2.jpg";
+            break;
+        case 3:
+            document.getElementsByClassName("icon")[0].src = "../public/img/sorteio/monster3.jpg";
+            break;
+        case 4:
+            document.getElementsByClassName("icon")[0].src = "../public/img/sorteio/monster4.jpg";
+            break;
+        case 5:
+            document.getElementsByClassName("icon")[0].src = "../public/img/sorteio/monster5.jpg";
+            break;
+    }
+    switch (rand2) {
+        case 1:
+            document.getElementsByClassName("icon2")[0].src = "../public/img/sorteio/monster1.jpg";
+            break;
+        case 2:
+            document.getElementsByClassName("icon2")[0].src = "../public/img/sorteio/monster2.jpg";
+            break;
+        case 3:
+            document.getElementsByClassName("icon2")[0].src = "../public/img/sorteio/monster3.jpg";
+            break;
+        case 4:
+            document.getElementsByClassName("icon2")[0].src = "../public/img/sorteio/monster4.jpg";
+            break;
+        case 5:
+            document.getElementsByClassName("icon2")[0].src = "../public/img/sorteio/monster5.jpg";
+            break;
+    }
+    switch (rand3) {
+        case 1:
+            document.getElementsByClassName("icon3")[0].src = "../public/img/sorteio/monster1.jpg";
+            break;
+        case 2:
+            document.getElementsByClassName("icon3")[0].src = "../public/img/sorteio/monster2.jpg";
+            break;
+        case 3:
+            document.getElementsByClassName("icon3")[0].src = "../public/img/sorteio/monster3.jpg";
+            break;
+        case 4:
+            document.getElementsByClassName("icon3")[0].src = "../public/img/sorteio/monster4.jpg";
+            break;
+        case 5:
+            document.getElementsByClassName("icon3")[0].src = "../public/img/sorteio/monster5.jpg";
+            break;
+    }
 
-    if (rand1 == 3 && rand2 == 3 && rand3 == 3){
+    if (rand1 == 4 && rand2 == 4 && rand3 == 4) {
         document.getElementById("sucesso").innerText = "Você salvou o Dodogama! s2";
     } else {
         document.getElementById("fracasso").innerText = "Você não salvou o Dodogama!";
