@@ -11,13 +11,21 @@ h1.title {
     width: 100%;
 }
 
+h2#description {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    text-align: center;
+    color: white;
+}
+
 div.col-md-4 {
     display: flex;
     justify-content: center;
 }
 
 div.container {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 h1#sucesso {
