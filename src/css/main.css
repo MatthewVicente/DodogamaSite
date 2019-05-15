@@ -1,0 +1,19 @@
+body{
+    background: url("../../public/img/charmDodogama.png") no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+.header {
+    background-color: #6ebaf4;
+    padding: 3px;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+#mainTitle {
+    text-align: center;
+}

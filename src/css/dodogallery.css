@@ -1,0 +1,10 @@
+body {
+    background:  url("../../public/img/angryDodogama.png") no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+h1.title {
+    text-align: center;
+    color: white;
+}
